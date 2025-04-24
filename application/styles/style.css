@@ -67,11 +67,11 @@ ul li {
 }
 
 footer {
-    background-color: #8bc34a; /* verde alface */
+    background-color: #c06d2e; /* verde alface */
     text-align: center;
     padding: 15px;
     color: white;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -90,4 +90,8 @@ img {
 
 img:hover {
     transform: scale(1.05);
+}
+
+.contato {
+    color: #4e342e;
 }
