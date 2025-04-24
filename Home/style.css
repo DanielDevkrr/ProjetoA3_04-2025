@@ -1,0 +1,93 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff8e1; /* tom de fundo tipo pão */
+    color: #4e342e; /* marrom escuro (carne) */
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #ff7043; /* vermelho molho */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.titulo {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffeb3b; /* amarelo queijo */
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: #fff3e0; /* tom de pão claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #6d4c41; /* outro marrom */
+    margin-bottom: 10px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #8bc34a; /* verde alface */
+    text-align: center;
+    padding: 15px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+}
+
+img {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
