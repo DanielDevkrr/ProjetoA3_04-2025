@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    position: fixed;
+    position: flex;
     width: 100%;
 }
 
@@ -54,7 +54,7 @@ header {
 .navbar {
     display: flex;
     font-weight: bold;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 60px;
     background-color: #fff;
@@ -89,6 +89,25 @@ header {
     text-decoration: none;
 }
 
+
+.order-button-floating {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #e60000;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    transition: background 0.3s ease;
+}
+
+.order-button-floating:hover {
+    background: #cc0000;
+}
 /* Hero */
 .hero {
     background: url('https://via.placeholder.com/1200x500') center/cover no-repeat;
@@ -108,7 +127,8 @@ header {
 }
 
 /* Menu */
-.menu {
+.menu{
+    height: 500px;
     padding: 60px;
     text-align: center;
 }
