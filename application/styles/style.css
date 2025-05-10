@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,92 +5,174 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff8e1; /* tom de fundo tipo pão */
-    color: #4e342e; /* marrom escuro (carne) */
-    line-height: 1.6;
-    padding: 0 20px;
+    font-family: poppins, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background: #fff;
+    color: #333;
 }
 
 header {
-    background-color: #ff7043; /* vermelho molho */
-    padding: 20px;
-    text-align: center;
-    color: white;
+    position: fixed;
+    width: 100%;
 }
 
-.titulo {
-    font-size: 2.5em;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
+/* Loading */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    z-index: 1000;
+}
+
+/* Spinner de carregamento */
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+   0% {
+       transform: rotate(0deg);
+   }
+   100% {
+       transform: rotate(360deg);
+   }
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #fff;
+    color: #000000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     gap: 20px;
 }
 
-nav a {
+.logo {
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
     text-decoration: none;
+   color: #000000;
+}
+
+.order-button {
+    background: #e60000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    background: url('https://via.placeholder.com/1200x500') center/cover no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    font-size: 36px;
     color: white;
     font-weight: bold;
-    transition: color 0.3s;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 4px;
 }
 
-nav a:hover {
-    color: #ffeb3b; /* amarelo queijo */
-}
-
-main {
-    max-width: 800px;
-    margin: 30px auto;
-}
-
-section {
-    margin-bottom: 40px;
-    background-color: #fff3e0; /* tom de pão claro */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-h2 {
-    color: #6d4c41; /* outro marrom */
-    margin-bottom: 10px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-footer {
-    background-color: #c06d2e; /* verde alface */
+/* Menu */
+.menu {
+    padding: 60px;
     text-align: center;
-    padding: 15px;
-    color: white;
-    /* position: fixed; */
-    bottom: 0;
-    left: 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.image-placeholder {
     width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+    height: 200px;
+    background: #ccc;
+    border-radius: 8px;
+    margin-bottom: 16px;
 }
 
-img {
-    width: 100%;
-    max-width: 250px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s;
+.price {
+    color: #e60000;
+    font-weight: bold;
 }
 
-img:hover {
-    transform: scale(1.05);
+/* Sobre */
+.about {
+    padding: 60px;
 }
 
-.contato {
-    color: #4e342e;
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #e60000;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #fff;
+    padding: 40px 60px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-logo {
+    font-size: 20px;
+    font-weight: bold;
 }

@@ -1,58 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburgueria Salmonelas</title>
-    <link rel="stylesheet" href="../styles/style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Chapa</title>
+  <link rel="stylesheet" href="/application/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
 </head>
 <body>
-    <header>
-        <h1 class="titulo"> Smart Lanches 
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="telaCardapio.html">Cardápio</a></button></li>
-                <li><a href="sobre.html">Sobre</a></li></button></li>
+  <header>
+    <nav class="navbar">
+      <div class="logo">La Chapa</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <a href="#" class="order-button">Peça agora</a>
+    </nav>
+  </header>
 
-            </ul>
-        </nav>
-    </header>
+  <section class="hero">
+    <div class="hero-text">Sabor que marca gerações</div>
+  </section>
 
-    <main>
-        <section id="home">
-            <h2>Bem-vindo à Hamburgueria mais insana da cidade!</h2>
-            <p>Descubra os hambúrgueres mais suculentos e ousados que você já provou.</p>
-        </section>
+  <section class="menu">
+    <h2>Nossos Clássicos</h2>
+    <div class="card-grid">
+      <div class="card">
+        <div class="image-placeholder"></div>
+        <h3>Nome do Hambúrguer</h3>
+        <p>Descrição curta do lanche...</p>
+        <span class="price">Preço: R$12,00</span>
+      </div>
+      <!-- Repita o card 4x -->
+      <div class="card"><div class="image-placeholder"></div><h3>Nome do Hambúrguer</h3><p>Descrição curta do lanche...</p><span class="price">Preço: R$12,00</span></div>
+      <div class="card"><div class="image-placeholder"></div><h3>Nome do Hambúrguer</h3><p>Descrição curta do lanche...</p><span class="price">Preço: R$12,00</span></div>
+      <div class="card"><div class="image-placeholder"></div><h3>Nome do Hambúrguer</h3><p>Descrição curta do lanche...</p><span class="price">Preço: R$12,00</span></div>
+    </div>
+  </section>
 
-        <section id="cardapio">
-            <h2>Nosso Cardápio</h2>
-            <ul>
-                <li><strong>Salmonela Clássico -</strong> O sabor unico que voce deseja!</li>
-                <img src="lancheProject.jfif" alt="lanche classico">
-                <li><strong>Triplo Bacon Zika</strong> - Tudo com 3x mais bacon!</li>
-                <li><strong>Veggie Bomb</strong> - Hambúrguer de grão-de-bico, maionese vegana e salada.</li>
-            </ul>
-        </section>
+  <section class="about">
+    <h2>Sobre Nós</h2>
+    <div class="about-content">
+      <img src="https://via.placeholder.com/400x300" alt="Interior da hamburgueria" />
+      <div class="about-text">
+        <h3>Quem somos</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet facilisis elit. Vestibulum ante...
+        </p>
+        <a href="#">Saiba mais</a>
+      </div>
+    </div>
+  </section>
 
-   
-
-    </main>
-
-    <footer>
-
-        <section class="contato" id="contato">
-            <h2>Fale com a gente</h2>
-            <p>Email: contato@salmonelasburger.com</p>
-            <p>WhatsApp: (11) 91234-5678</p>
-        </section>
-
-        <p>&copy; 2025 Hamburgueria Salmonelas. Todos os direitos reservados.</p>
-    </footer>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">La Chapa</div>
+      <ul>
+        <li>Home</li>
+        <li>Cardápio</li>
+        <li>Contato</li>
+      </ul>
+      <p>Endereço: Rua tal de tal, 2124, Cidade</p>
+      <p>Telefone: (11) 65454-5455</p>
+      <p>E-mail: email@site.com</p>
+    </div>
+  </footer>
+  
+  <div id="loadingScreen" class="loading">
+        <div class="spinner"></div>
+    </div>
 </body>
-
-<script src="index.js"></script>
-
 </html>
