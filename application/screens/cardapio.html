@@ -1,93 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cardápio - La Chapa</title>
-  <link rel="stylesheet" href="cardapio.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio | La Chapa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="loading">
+    <div class="spinner"></div>
+  </div>
+
   <header>
     <nav class="navbar">
       <div class="logo">La Chapa</div>
       <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-        <li><a href="cardapio.html">Cardápio</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="contato.html">Contato</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cardápio</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
       </ul>
       <a href="#" class="order-button">Peça agora</a>
     </nav>
   </header>
 
   <main>
-    <h1 class="title">Nosso Cardápio</h1>
+    <section class="menu">
+      <h2>Nosso Cardápio</h2>
 
-    <div class="categories">
-      <a href="#combos">Combos</a>
-      <a href="#hamburgueres">Hamburgueres</a>
-      <a href="#bebidas">Bebidas</a>
-      <a href="#acompanhamentos">Acompanhamentos</a>
-    </div>
+      <div class="categories">
+        <a href="#combos">Combos</a>
+        <a href="#hamburgueres">Hamburgueres</a>
+        <a href="#bebidas">Bebidas</a>
+        <a href="#acompanhamentos">Acompanhamentos</a>
+      </div>
 
-    <section id="combos">
-      <h2>Combos</h2>
-      <div class="card-grid">
-        <!-- Repetir esse bloco para cada item -->
-        <div class="card">
-          <div class="image"></div>
-          <p>Nome do Hamburger</p>
-          <button>Adicionar</button>
-          <span>R$12,00</span>
+      <section id="combos">
+        <h3>Combos</h3>
+        <div class="card-grid">
+          <!-- Card exemplo -->
+          <div class="card">
+            <div class="image-placeholder"></div>
+            <p>Nome do Hamburguer</p>
+            <button>Adicionar</button>
+            <span class="price">R$12,00</span>
+          </div>
+          <!-- Repita mais cards -->
         </div>
-        <!-- 8 cards de exemplo -->
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-      </div>
+      </section>
+
+      <section id="hamburgueres">
+        <h3>Hamburgueres</h3>
+        <div class="card-grid">
+          <!-- Repita cards como no exemplo acima -->
+        </div>
+      </section>
+
+      <section id="bebidas">
+        <h3>Bebidas</h3>
+        <div class="card-grid">
+          <!-- Repita cards -->
+        </div>
+      </section>
+
+      <section id="acompanhamentos">
+        <h3>Acompanhamentos</h3>
+        <div class="card-grid">
+          <!-- Repita cards -->
+        </div>
+      </section>
     </section>
+  </main>
 
-    <div class="banner">Está com fome? Pede um <span>la chapa!</span></div>
-
-    <section id="hamburgueres">
-      <h2>Hamburgueres</h2>
-      <div class="card-grid">
-        <!-- Cards -->
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-      </div>
-    </section>
-
-    <section id="bebidas">
-      <h2>Bebidas</h2>
-      <div class="card-grid">
-        <!-- Cards -->
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-      </div>
-    </section>
-
-    <div class="banner">Vai um <span>molhinho?</span></div>
-
-    <section id="acompanhamentos">
-      <h2>Acompanhamento</h2>
-      <div class="card-grid">
-        <!-- Cards -->
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-        <div class="card"><div class="image"></div><p>Nome do Hamburger</p><button>Adicionar</button><span>R$12,00</span></div>
-      </di
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">La Chapa</div>
+      <ul>
+        <li>Home</li>
+        <li>Cardápio</li>
+        <li>Contato</li>
+      </ul>
+      <p>Endereço: Rua tal, 123 - Bairro tal, Cidade</p>
+      <p>Telefone: (00) 1234-5678</p>
+      <p>E-mail: contato@lachapa.com</p>
+    </div>
+  </footer>
+</body>
+</html>
