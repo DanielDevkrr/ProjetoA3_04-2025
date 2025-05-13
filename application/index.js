@@ -14,4 +14,3 @@ function mostrarTela (){
     document.getElementById("loadingScreen").style.display = "flex";
 }
 
-

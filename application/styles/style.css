@@ -11,6 +11,10 @@ body {
     color: #666666;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /***********************************FORMATAÇÕES DO HEADER**************************/
 header {
     display: flex;
@@ -231,6 +235,136 @@ header a:hover {
 #grupo-sobre img,
 #sobre-texto {
     height: auto;
+}
+
+/******************************************** FORMATAÇÃO MENU **********************************************/
+.cardapio {
+    padding: 60px 0px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cardapio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.cardapio h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-categorias {
+    background-color: #000;
+    padding: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.nav-categorias a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.categoria h3 {
+    font-size: 1.8rem;
+    margin: 100px 0;
+}
+
+.btn-add {
+    background-color: #b91c1c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn-add:hover {
+    background-color: #58a363;
+    transform: scale(1.05);
+}
+
+.preço {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: #34653c;
+}
+
+.destaque {
+    margin: 50px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #000;
+    color: white;
+    padding: 30px;
+}
+
+.destaque span {
+    color: #facc15;
+    font-style: italic;
+}
+
+.grupo-card-cardapio img {
+    width: 100%;
+    height: auto;
+    background-color: #bbb;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.grupo-card-cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px;
+}
+
+.grupo-card-cardapio .card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    width: 350px;
+    height: auto;
+    padding: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.grupo-card-cardapio .card:hover {
+    transform: scale(1.05);
+}
+
+.card h4 {
+    font-size: 1.0rem;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
 }
 
 /********************************************FORMATAÇÕES DO FOOTER*******************************************/
