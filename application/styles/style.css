@@ -15,6 +15,15 @@ html {
     scroll-behavior: smooth;
 }
 
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    margin: 80px 0;
+}
+
 
 #btn-topo {
     display: none;
@@ -389,6 +398,80 @@ header a:hover {
     margin-bottom: 8px;
     font-family: 'Poppins', sans-serif;
     color: #000;
+}
+
+
+/*********************************************FORMATAÇÕES DO CONTATO******************************************/
+
+.contato-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 12px;
+    background: #B22222;
+    color: #FFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-enviar:hover {
+    background: #8B1A1A;
+}
+
+/*******************************************FORMATAÇÕES MAPA*****************************************/
+.mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    text-align: center;
+    gap: 20px;
+}
+
+.mapa h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.mapa iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /********************************************FORMATAÇÕES DO FOOTER*******************************************/
