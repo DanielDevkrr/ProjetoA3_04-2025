@@ -36,3 +36,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Função Botão Hamburguer
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const barraNavegacao = document.getElementById("barra-de-navegacao");
+
+    menuToggle.addEventListener("click", function () {
+        barraNavegacao.classList.toggle("ativo");
+    });
+});
