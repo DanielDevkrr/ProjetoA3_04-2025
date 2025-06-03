@@ -1,0 +1,12 @@
+{
+  "name": "smart-lanches",
+  "version": "1.0.0",
+  "description": "Smart Lanches - Aplicação Web",
+  "main": "application/index.js",
+  "scripts": {
+    "start": "echo 'No server required for static site'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
