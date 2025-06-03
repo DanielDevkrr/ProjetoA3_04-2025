@@ -1,1 +1,11 @@
-/* /index.html 200
+# Handle all routes
+/*    /screens/index.html    200
+
+# Redirect root
+/    /screens/index.html    200
+
+# Redirect old paths
+/index.html    /screens/index.html    301
+/cardapio.html    /screens/cardapio.html    301
+/sobre.html    /screens/sobre.html    301
+/contato.html    /screens/contato.html    301

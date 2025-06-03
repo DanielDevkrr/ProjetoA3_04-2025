@@ -2,11 +2,41 @@
   publish = "application"
   command = ""
 
+# Handle client-side routing
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/screens/index.html"
+  status = 200
+  force = false
+
+# Redirect root to screens/index.html
+[[redirects]]
+  from = "/"
+  to = "/screens/index.html"
   status = 200
 
+# Redirect old paths to new structure
+[[redirects]]
+  from = "/index.html"
+  to = "/screens/index.html"
+  status = 301
+
+[[redirects]]
+  from = "/cardapio.html"
+  to = "/screens/cardapio.html"
+  status = 301
+
+[[redirects]]
+  from = "/sobre.html"
+  to = "/screens/sobre.html"
+  status = 301
+
+[[redirects]]
+  from = "/contato.html"
+  to = "/screens/contato.html"
+  status = 301
+
+# Security headers
 [[headers]]
   for = "/*"
   [headers.values]
@@ -14,3 +44,4 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Cache-Control = "public, max-age=0, must-revalidate"
