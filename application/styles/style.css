@@ -88,6 +88,24 @@ header a:hover {
     background-color: #F0F0F0;
 }
 
+/********************************FORMATAÇÕES DO MENU DE NAVEGAÇÃO BOTÃO HAMBURGUER**************************/
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.menu-toggle:hover {
+    background-color: #F0F0F0;
+}
+
+
+
 /***********************************FORMATAÇÕES DO BANNER********************************/
 
 .banner {
